@@ -1,0 +1,19 @@
+{
+  "url" : "http://newint.org/search/tag_ajax/cop22",
+  "query" : "tags:'cop22'",
+  "results" : [
+
+	{
+		"title": "The sun sets on Marrakesh climate talks as Trump's dark cloud rises",
+		"url": "https://newint.org/blog/2016/11/23/sun-sets-on-marrakesh-as-dark-cloud-of-trump-rises/",
+		"description": "Youth seem more determined than ever to fight for climate justice, Chloe Farand writes.",
+		"thumbnail": "https://newint.org/blog/2016/11/23/23.11.16-we-are-still-in-590_thumb.jpg",
+		"date": "Wed, 23 Nov 2016 17:22:57 +0000"	},
+	{
+		"title": "COP22: why climate justice must also be a struggle for sovereignty",
+		"url": "https://newint.org/blog/2016/11/18/cop22-why-climate-justice-must-also-be-a-struggle-for-sovereignt/",
+		"description": "The Dakota Access pipeline is very much on the minds of indigenous delegates at the UN summit in Morocco, reports Morgan Curtis.",
+		"thumbnail": "https://newint.org/blog/2016/11/18/18-11-2016-cop22-4-590_thumb.jpg",
+		"date": "Wed, 23 Nov 2016 12:34:49 +0000"	}
+  ]
+}

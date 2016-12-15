@@ -2630,6 +2630,11 @@
     margin: 0 0 2em 0;
   }
 
+/* Blog post/social media item list */
+#newint-updates a {border:none}
+#newint-updates .image-thumb {width:200px;height:120px}
+#newint-updates div {height:20em;overflow:hidden}
+
 /* Table */
 
   .table-wrapper {

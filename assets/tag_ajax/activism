@@ -1,0 +1,43 @@
+{
+  "url" : "http://newint.org/search/tag_ajax/activism/6",
+  "query" : "tags:'activism'",
+  "results" : [
+
+	{
+		"title": "The deadly business of grassroots climate activism",
+		"url": "https://newint.org/features/web-exclusive/2016/11/15/the-deadly-business-of-grassroots-climate-activism/",
+		"description": "A recent report found that 2015 was the deadliest year on record for environmental activists, raising concerns for those who continue to fight on the frontline, writes Liam Turner.",
+		"thumbnail": "https://newint.org/features/web-exclusive/2016/11/15/15-11-2016-greenpeace-590_thumb.jpg",
+		"date": "Tue, 15 Nov 2016 13:15:51 +0000"	},
+	{
+		"title": "Students, Solidarity and Sweatshops",
+		"url": "https://newint.org/blog/2016/10/21/students-solidarity-and-sweatshops/",
+		"description": "After its long history of standing up against injustice, the student movement is taking on the issue of modern slavery, writes Chris Jarvis.",
+		"thumbnail": "https://newint.org/blog/2016/10/21/21-10-2016-banner-590_thumb.jpg",
+		"date": "Thu, 08 Dec 2016 11:11:23 +0000"	},
+	{
+		"title": "Spied on by BP",
+		"url": "https://newint.org/features/2014/11/01/my-spy/",
+		"description": "Why did an oil company go to such lengths to monitor Jess Worth’s activism? Perhaps we are more powerful than we think.",
+		"thumbnail": "https://newint.org/features/2014/10/17/jessdanny-590.jpg",
+		"date": "Tue, 06 Sep 2016 12:51:35 +0000"	},
+	{
+		"title": "Bravery's edge",
+		"url": "https://newint.org/features/2015/09/01/syrian-activists-risk-their-lives/",
+		"description": "Thousands of unknown activists have risked their lives to defy extremism and violence. Daniel Adamson interviews some of them.",
+		"thumbnail": "https://newint.org/features/2015/09/16/75912_opt_thumb.png",
+		"date": "Tue, 06 Sep 2016 12:51:15 +0000"	},
+	{
+		"title": "The People vs Monsanto (and other GM giants)",
+		"url": "https://newint.org/features/2015/04/01/groups-against-monsanto/",
+		"description": "Around the world, people are mobilizing against biotech bullies.",
+		"thumbnail": "https://newint.org/features/2015/03/22/blogthepeoplevsmonsanto_thumb.jpg",
+		"date": "Tue, 06 Sep 2016 12:49:32 +0000"	},
+	{
+		"title": "Action on banks - what you can do",
+		"url": "https://newint.org/features/2015/05/01/action/",
+		"description": "How to get involved...",
+		"thumbnail": "https://newint.org/features/2015/05/27/15.05.27-banks-590.jpg",
+		"date": "Tue, 06 Sep 2016 12:49:16 +0000"	}
+  ]
+}

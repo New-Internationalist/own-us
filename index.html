@@ -39,6 +39,7 @@
                   </li>
                 </ul>
               </li-->
+              <li><a href="#updates">Updates</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#press">In the press</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
@@ -110,7 +111,34 @@
           <a href="#about" class="goto-next scrolly">More</a>
         </section>
 
-      <!-- One -->
+      <!-- Updates -->
+        <section id="updates" class="wrapper style1 special fade-up">
+          <!--span class="image fit main"><img src="images/pic02.jpg" alt="" /></span-->
+          <div class="container">
+            <header class="major">
+              <h2>Updates</h2>
+              <p>From our website and from social media</p>
+            </header>
+            <div class="content">
+              <div id="sm-updates" class="row uniform">
+                <!--div class="4u 12u$(medium)">
+                </div-->
+                <div class="12u 12u$(medium)">
+                  <iframe style="width:90%;height:450px" src="https://www.youtube.com/embed/Qk6R6ZO9i4k" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div id="newint-updates" class="row uniform">
+              </div>
+            </div>
+            <footer class="major">
+              <ul class="actions">
+                <li><a href="#about" class="goto-next scrolly">Next</a></li>
+              </ul>
+            </footer>
+          </div>
+        </section>
+
+      <!-- About the CSO -->
         <section id="about" class="spotlight style1 bottom">
           <span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
           <div class="content">
@@ -149,7 +177,7 @@
           <a href="#press" class="goto-next scrolly"></a>
         </section>
 
-      <!-- Two -->
+      <!-- In the press -->
         <section id="press" class="spotlight style2 right">
           <span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
           <div class="content">
@@ -331,5 +359,33 @@
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
 
+      <script>
+        //<![CDATA[
+        (function($) {
+          tags = "activism";
+
+          query = "assets/tag_ajax/" + tags;
+          $.getJSON(query, 
+          {},
+          function(data) {
+            var items = [];
+            $.each(data.results, function(i, item) {
+              if (item.title != tags) {
+                var thumbnail_str = '';
+                if(item.thumbnail != '')
+                thumbnail_str = '<a href="' +item.url+ '"><img class="image-thumb" alt="story-thumb-nail-image" src="' +item.thumbnail+ '" /></a>';
+                items.push('<div class="4u 12u$(medium)" id="related-item-' + i + '">'  
+                + thumbnail_str
+                + '<h4 class="entry-title">'
+                  + '<a href="'+item.url+'">' + item.title + '</a></h4>'
+                + '<div class="entry-summary">'+item.description+'</div></div>');
+              }
+            });
+
+            $('#newint-updates').append(items.join(''));
+          }); 
+        })(jQuery);
+        // ]]>
+        </script>
   </body>
 </html>
