@@ -27,6 +27,9 @@
               <li><a href="https://newint.org">newint.org &raquo;</a></li>
             </ul>
           </nav>
+          <nav id="toTop" style="display:none;position:fixed;top:2px;right:10px">
+            <ul><li><a href="#banner">Back to top</a></li></ul>
+          </nav>
         </header>
 
       <!-- Banner -->
@@ -81,6 +84,13 @@
       <script>
         //<![CDATA[
         (function($) {
+          $(window).scroll(function() {
+            if ($(this).scrollTop()) {
+              $('#toTop:hidden').stop(true, true).fadeIn();
+            } else {
+              $('#toTop').stop(true, true).fadeOut();
+            }
+          });
           var email = location.search.split('email=')[1];
           $('#survey').attr('src','https://docs.google.com/forms/d/e/1FAIpQLSe52QBm1eKQYmfla9i_tQMGjHH1Il6-GjTvMP7p9P72bMAD4w/viewform?embedded=true&entry.1378294604='+email+'#mG61Hd');
         })(jQuery);

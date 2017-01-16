@@ -8,7 +8,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-		<script src="https://cdn.optimizely.com/js/8056530502.js"></script>
+    <meta property="og:title"       content="Own New Internationalist!" />
+    <meta property="og:locale"      content="en_GB" />
+    <meta property="og:type"        content="article" />
+    <meta property="og:url"         content="/" />
+    <meta property="og:site_name"   content="own-us.newint.org" />
+    <meta property="og:description" content="Own New Internationalist and help keep independent media strong" />
+
+    <meta property="twitter:card"         content="summary_large_image" />
+    <meta property="twitter:title"        content="Own New Internationalist!" />
+    <meta property="twitter:domain"       content="own-us.newint.org" />
+    <meta property="twitter:description"  content="Own New Internationalist and help keep independent media strong" />
+    <meta property="twitter:creator"      content="@newint" />
+    <meta property="twitter:site"         content="@newint" />
+    <meta property="twitter:image"        content="https://own-us.newint.org/images/handhold.jpg" />
+    <meta property="twitter:image:src"    content="https://own-us.newint.org/images/handhold.jpg" />
+    <meta property="twitter:image:alt"    content="Own New Internationalist and help keep independent media strong" />
+
+    <script src="https://cdn.optimizely.com/js/8056530502.js"></script>
     <title>Own New Internationalist</title>
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -17,7 +34,6 @@
   </head>
   <body class="landing">
     <div id="page-wrapper">
-
       <!-- Header -->
         <header id="header">
           <h1 id="logo"><a href="index.html" class="fill-div"></a></h1>
@@ -50,6 +66,9 @@
               <!--li><a href="https://newint.org/misc/newsletter/help-shape-our-future/" class="button special">Invest</a></li-->
             </ul>
           </nav>
+          <nav id="toTop" style="display:none;position:fixed;top:2px;right:10px">
+            <ul><li><a href="#banner">Back to top</a></li></ul>
+          </nav>
         </header>
 
       <!-- Banner -->
@@ -73,10 +92,10 @@
               <div class="row uniform 50%">
                 <input type="hidden" name="slid" value="6B5869DC547D3D46650B4D6780487885">
                 <input type="hidden" name="cmd" value="subscribe">
-                <input type="hidden" name="goto" id="goto" value="http://own-us.newint.org/thankyou.html">
+                <input type="hidden" name="goto" id="goto" value="https://own-us.newint.org/thankyou.html">
                 <input type="hidden" name="custom_source_web_quickjoin" value="1">
                 <input type="hidden" name="custom_is_double_optin" value="1">
-                <input type="hidden" name="custom_source_web_sub_page" value="/index.html ">
+                <input type="hidden" name="custom_source_web_sub_page" value="https://own-us.newint.org/index.html ">
                 <input type="hidden" name="custom_tmp_2016_interested_in_cso" value="1">
                 <input type="hidden" name="format" value="html">
                 <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="you@yourdomain.com" onchange="$('#goto').val('http://own-us.newint.org/thankyou.html?email=' + $('#email').val());" /></div>
@@ -170,27 +189,40 @@
                   <h2>Community share offer</h2>
                     <p>Stand up for something better</p>
                   </header>
-                  <p>In the wake of Trump’s victory and Brexit, it’s time to <strong>stand up for something better</strong>.</p>
+                  <p>In the wake of Trump’s victory and Brexit we need to build the kind of media that brings people together.
+                  </p>
+                  <p>
+                  By this we mean trustworthy journalism that gives the facts; stories that make sense of the complex, beautiful and bewildering world we live in. And critical analysis that offers a road map to a more equal world.
+                  </p>
                 </div>
                 <div class="4u 12u$(medium)">
                   <p>
-                  Over the past 43 years, <strong>New Internationalist</strong> has pioneered a unique kind of journalism. 
-                  We uncover the relationship between the powerful and the powerless everywhere on earth.
-                  And offer a road map to a <strong>more equal world</strong>.
+                  Over the past 44 years, New Internationalist has delivered precisely that.
                   </p>
                   <p>
-                  To keep us strong and flourishing into the future, we have an exciting and ambitious plan to give you the chance to invest in New Internationalist and <strong>become one of our owners</strong>
+                  In these times of 'post-truth' and mistrust, we need to get our perspectives, bright examples and bold ideas out to a wider audience than ever before.
+                  </p>
+                  <p>
+                  So, to scale-up and keep us strong and flourishing into the future, we are turning to you with a bold investment plan:
+                  </p>
+                  <p>
+                  In March 2017, we will launch a Community Share Offer.
                   </p>
                 </div>
                 <div class="4u$ 12u$(medium)">
                   <p>
-                  In Spring 2017, we want to launch a community share offer that will <strong>turn NI into a global media co-operative</strong> owned by thousands of ordinary people.
+                   It will turn New Internationalist into a global media co-operative owned by thousands of ordinary people.
                   </p>
                   <p>
-                  The capital that we raise will <strong>transform our business</strong>, ensure that New Internationalist thrives – and keep hope alive for a more equal, global society.
+                  The capital we raise will allow us to survive and thrive into the future - without compromising our core values.
                   </p>
                   <p>
+                  As a community of co-owners, we can pioneer a future-proof model for media ownership. And drive the change we wish to see, together.
                   </p>
+                  <p>
+                  Let’s buy into a better story.
+                  </p>
+
                 </div>
               </div>
             </div>
@@ -367,7 +399,6 @@
             <li>&copy; 2016-2017 New Internationalist</li><li>Template by <a href="http://html5up.net">HTML5 UP</a></li>
           </ul>
         </footer>
-
     </div>
 
     <!-- Scripts -->
@@ -379,17 +410,24 @@
       <script src="assets/js/util.js"></script>
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
-			<script>
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-				ga('create', 'UA-92317-25', 'auto');
-				ga('send', 'pageview');
-			</script>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-92317-25', 'auto');
+        ga('send', 'pageview');
+      </script>
       <script>
         //<![CDATA[
         (function($) {
+          $(window).scroll(function() {
+            if ($(this).scrollTop()) {
+              $('#toTop:hidden').stop(true, true).fadeIn();
+            } else {
+              $('#toTop').stop(true, true).fadeOut();
+            }
+          });
           tags = "activism";
 
           query = "assets/tag_ajax/" + tags;
