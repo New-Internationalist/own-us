@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300italic|Bevan");
 
 /*
   Landed by HTML5 UP
@@ -1551,7 +1551,7 @@
 /* Basic */
 
   html, body {
-    background: #1c1d26;
+    background: #eee;
   }
 
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1566,10 +1566,10 @@
   }
 
   body, input, select, textarea {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(5, 5, 5, 0.75);
     font-family: "Roboto", Helvetica, sans-serif;
     font-size: 15pt;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.75em;
   }
 
@@ -1579,12 +1579,12 @@
     -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
     border-bottom: dotted 1px;
-    color: #e44c65;
+    color: #e22420;
     text-decoration: none;
   }
 
     a:hover {
-      color: #e44c65 !important;
+      color: #e22420 !important;
       border-bottom-color: transparent;
     }
 
@@ -1602,7 +1602,8 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
+    color: #222;
+    font-family:bevan,helvetica,sans-serif;
     font-weight: 300;
     line-height: 1em;
     margin: 0 0 1em 0;
@@ -1653,7 +1654,7 @@
 
   hr {
     border: 0;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+    border-bottom: solid 1px rgba(5, 5, 5, 0.3);
     margin: 3em 0;
   }
 
@@ -1662,7 +1663,7 @@
     }
 
   blockquote {
-    border-left: solid 4px rgba(255, 255, 255, 0.3);
+    border-left: solid 4px rgba(5, 5, 5, 0.3);
     font-style: italic;
     margin: 0 0 2em 0;
     padding: 0.5em 0 0.5em 2em;
@@ -2101,7 +2102,7 @@
   }
 
   header p {
-    color: #ffffff;
+    color: #333;
     position: relative;
     margin: 0 0 1.5em 0;
   }
@@ -2133,7 +2134,7 @@
   }
 
     header.major:after {
-      background: #e44c65;
+      background: #e22420;
       content: '';
       display: inline-block;
       height: 0.2em;
@@ -2174,7 +2175,7 @@
     transition: border-color 0.2s ease-in-out;
     background: transparent;
     border-radius: 4px;
-    border: solid 1px rgba(255, 255, 255, 0.3);
+    border: solid 1px rgba(5, 5, 5, 0.3);
     color: inherit;
     display: block;
     outline: 0;
@@ -2196,7 +2197,7 @@
     input[type="email"]:focus,
     select:focus,
     textarea:focus {
-      border-color: #e44c65;
+      border-color: #e22420;
     }
 
   .select-wrapper {
@@ -2215,7 +2216,7 @@
     }
 
     .select-wrapper:before {
-      color: rgba(255, 255, 255, 0.3);
+      color: rgba(5, 5, 5, 0.3);
       content: '\f078';
       display: block;
       height: 3em;
@@ -2269,11 +2270,11 @@
     input[type="checkbox"] + label,
     input[type="radio"] + label {
       text-decoration: none;
-      color: rgba(255, 255, 255, 0.75);
+      color: rgba(5, 5, 5, 0.75);
       cursor: pointer;
       display: inline-block;
       font-size: 1em;
-      font-weight: 100;
+      font-weight: 300;
       padding-left: 2.55em;
       padding-right: 0.75em;
       position: relative;
@@ -2292,7 +2293,7 @@
       input[type="checkbox"] + label:before,
       input[type="radio"] + label:before {
         border-radius: 4px;
-        border: solid 1px rgba(255, 255, 255, 0.3);
+        border: solid 1px rgba(5, 5, 5, 0.3);
         content: '';
         display: inline-block;
         height: 1.8em;
@@ -2313,7 +2314,7 @@
 
     input[type="checkbox"]:focus + label:before,
     input[type="radio"]:focus + label:before {
-      border-color: #e44c65;
+      border-color: #e22420;
     }
 
   input[type="checkbox"] + label:before {
@@ -2325,27 +2326,27 @@
   }
 
   ::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(5, 5, 5, 0.5) !important;
     opacity: 1.0;
   }
 
   :-moz-placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(5, 5, 5, 0.5) !important;
     opacity: 1.0;
   }
 
   ::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(5, 5, 5, 0.5) !important;
     opacity: 1.0;
   }
 
   :-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(5, 5, 5, 0.5) !important;
     opacity: 1.0;
   }
 
   .formerize-placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(5, 5, 5, 0.5) !important;
     opacity: 1.0;
   }
 
@@ -2353,7 +2354,7 @@
 
   .box {
     border-radius: 4px;
-    border: solid 1px rgba(255, 255, 255, 0.3);
+    border: solid 1px rgba(5, 5, 5, 0.3);
     margin-bottom: 2em;
     padding: 1.5em;
   }
@@ -2529,7 +2530,7 @@
     }
 
       ul.alt li {
-        border-top: solid 1px rgba(255, 255, 255, 0.3);
+        border-top: solid 1px rgba(5, 5, 5, 0.3);
         padding: 0.5em 0;
       }
 
@@ -2648,7 +2649,7 @@
   }
 
     table tbody tr {
-      border: solid 1px rgba(255, 255, 255, 0.3);
+      border: solid 1px rgba(5, 5, 5, 0.3);
       border-left: 0;
       border-right: 0;
     }
@@ -2670,11 +2671,11 @@
     }
 
     table thead {
-      border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+      border-bottom: solid 1px rgba(5, 5, 5, 0.3);
     }
 
     table tfoot {
-      border-top: solid 1px rgba(255, 255, 255, 0.3);
+      border-top: solid 1px rgba(5, 5, 5, 0.3);
     }
 
     table.alt {
@@ -2682,7 +2683,7 @@
     }
 
       table.alt tbody tr td {
-        border: solid 1px rgba(255, 255, 255, 0.3);
+        border: solid 1px rgba(5, 5, 5, 0.3);
         border-left-width: 0;
         border-top-width: 0;
       }
@@ -2720,7 +2721,7 @@
     background-color: transparent;
     border-radius: 4px;
     border: 0;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 0 1px rgba(5, 5, 5, 0.3);
     color: #ffffff !important;
     cursor: pointer;
     display: inline-block;
@@ -2740,8 +2741,8 @@
     input[type="button"]:active,
     .button:hover,
     .button:active {
-      box-shadow: inset 0 0 0 1px #e44c65;
-      color: #e44c65 !important;
+      box-shadow: inset 0 0 0 1px #e22420;
+      color: #e22420 !important;
     }
 
     input[type="submit"]:active,
@@ -2785,7 +2786,7 @@
     input[type="reset"].special,
     input[type="button"].special,
     .button.special {
-      background-color: #e44c65;
+      background-color: #e22420;
       box-shadow: none;
       color: #ffffff !important;
     }
@@ -2794,7 +2795,7 @@
       input[type="reset"].special:hover,
       input[type="button"].special:hover,
       .button.special:hover {
-        background-color: #e76278;
+        background-color: #ea5c43;
       }
 
       input[type="submit"].special:active,
@@ -2811,7 +2812,7 @@
     input[type="button"]:disabled,
     .button.disabled,
     .button:disabled {
-      background-color: rgba(255, 255, 255, 0.3) !important;
+      background-color: rgba(5, 5, 5, 0.3) !important;
       box-shadow: none !important;
       color: #ffffff !important;
       cursor: default;
@@ -2971,7 +2972,7 @@
       -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
       -ms-transition: -ms-transform 1s ease, opacity 1s ease;
       transition: transform 1s ease, opacity 1s ease;
-      background: rgba(23, 24, 32, 0.95);
+      background: rgba(255, 255, 255, 0.85);
       border-style: solid;
       opacity: 1;
       position: absolute;
@@ -3027,7 +3028,7 @@
     }
 
     .spotlight.style1 .content {
-      border-color: #e44c65;
+      border-color: #e22420;
     }
 
     .spotlight.style2 .content {
@@ -3095,7 +3096,7 @@
   }
 
     .wrapper.style2 {
-      background: #e44c65;
+      background: #75d1ce;
     }
 
       .wrapper.style2 input[type="text"]:focus,
@@ -3103,7 +3104,7 @@
       .wrapper.style2 input[type="email"]:focus,
       .wrapper.style2 select:focus,
       .wrapper.style2 textarea:focus {
-        border-color: rgba(255, 255, 255, 0.5);
+        border-color: rgba(5, 5, 5, 0.5);
       }
 
       .wrapper.style2 input[type="submit"]:hover, .wrapper.style2 input[type="submit"]:active,
@@ -3114,7 +3115,7 @@
       .wrapper.style2 .button:hover,
       .wrapper.style2 .button:active {
         background-color: rgba(255, 255, 255, 0.075) !important;
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
+        box-shadow: inset 0 0 0 1px rgba(5, 5, 5, 0.5) !important;
         color: #ffffff !important;
       }
 
@@ -3129,8 +3130,8 @@
       .wrapper.style2 input[type="reset"].special,
       .wrapper.style2 input[type="button"].special,
       .wrapper.style2 .button.special {
-        background-color: #ffffff;
-        color: #e44c65 !important;
+        background-color: #e22420;
+        color: #fff !important;
       }
 
         .wrapper.style2 input[type="submit"].special:hover, .wrapper.style2 input[type="submit"].special:active,
@@ -3140,8 +3141,9 @@
         .wrapper.style2 input[type="button"].special:active,
         .wrapper.style2 .button.special:hover,
         .wrapper.style2 .button.special:active {
-          background-color: rgba(255, 255, 255, 0.075) !important;
-          box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
+          /*background-color: rgba(255, 255, 255, 0.75) !important;*/
+          background-color: #ea5c43 !important;
+          box-shadow: inset 0 0 0 1px rgba(5, 5, 5, 0.5) !important;
           color: #ffffff !important;
         }
 
@@ -3223,7 +3225,7 @@
 
       .dropotron > li a, .dropotron > li span {
         border: 0;
-        color: rgba(255, 255, 255, 0.75);
+        color: rgba(5, 5, 5, 0.75);
         display: block;
         padding: 0.1em 1em;
         text-decoration: none;
@@ -3234,7 +3236,7 @@
       }
 
       .dropotron > li.active > a, .dropotron > li.active > span {
-        color: #e44c65;
+        color: #e22420;
       }
 
     .dropotron.level-0 {
@@ -3265,8 +3267,8 @@
 
 /* Logo */
 #logo {
-  background:url(images/unspun-logo-250px.png) no-repeat;
-  min-width:250px;
+  background:url(images/ownus-fandh-logo-270px.png) no-repeat;
+  min-width:270px;
 }
 
 #logo .fill-div { display:block; height:100%; width:100%}
@@ -3332,7 +3334,7 @@
             }
 
           #header nav ul li.active > a, #header nav ul li.active > span {
-            color: #e44c65;
+            color: #e22420;
           }
 
           #header nav ul li > ul {
@@ -3353,7 +3355,7 @@
 
   #banner {
     background-attachment: fixed;
-    background-color: #272833;
+    background-color: #fff;
     background-image: url("../../images/handhold-cmp.jpg");
     background-position: center center;
     background-size: cover;
@@ -3373,7 +3375,7 @@
     }
 
     #banner:after {
-      background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
+      background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.75)), url("images/overlay.png");;
       background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
       background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
       background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
@@ -3434,7 +3436,7 @@
 /* Footer */
 
   #footer {
-    background: #272833;
+    background: #faac0b;
     padding: 6em 0;
     text-align: center;
   }
@@ -3454,11 +3456,11 @@
 
       #footer .icons .icon.alt:before {
         color: #272833 !important;
-        text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
+        text-shadow: 1px 0 0 rgba(5, 5, 5, 0.5), -1px 0 0 rgba(5, 5, 5, 0.5), 0 1px 0 rgba(5, 5, 5, 0.5), 0 -1px 0 rgba(5, 5, 5, 0.5);
       }
 
     #footer .copyright {
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(5, 5, 5, 0.5);
       font-size: 0.8em;
       line-height: 1em;
       margin: 2em 0 0 0;
@@ -3467,7 +3469,7 @@
     }
 
       #footer .copyright li {
-        border-left: solid 1px rgba(255, 255, 255, 0.3);
+        border-left: solid 1px rgba(5, 5, 5, 0.3);
         display: inline-block;
         list-style: none;
         margin-left: 1.5em;
@@ -3572,7 +3574,7 @@
         }
 
         .spotlight .content {
-          background-color: #1c1d26;
+          background-color: #fff;
           border-width: 0 !important;
           border-top-width: 0.35em !important;
           bottom: auto !important;
@@ -3811,8 +3813,8 @@
           }
 
           #titleBar .toggle:before {
-            background: #e44c65;
-            color: rgba(255, 255, 255, 0.5);
+            background: #e22420;
+            color: rgba(5, 5, 5, 0.5);
             content: '\f0c9';
             display: block;
             font-size: 18px;
@@ -3853,7 +3855,7 @@
         #navPanel .link {
           border: 0;
           border-top: solid 1px rgba(255, 255, 255, 0.05);
-          color: rgba(255, 255, 255, 0.75);
+          color: rgba(5, 5, 5, 0.75);
           display: block;
           height: 3em;
           line-height: 3em;
