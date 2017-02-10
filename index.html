@@ -115,15 +115,12 @@
                 // this monstrous way of writing it is forced on me by IE's crap JS implementation
                 // I'd like to write [rest,d] = modDiv...
                 xs = modDiv(secs,days);
-                rest=xs[0];
                 d=xs[1];
-                xs = modDiv(rest,hours);
-                rest=xs[0];
+                xs = modDiv(xs[0],hours);
                 h=xs[1];
-                xs = modDiv(rest,minutes);
+                xs = modDiv(xs[0],minutes);
                 s=xs[0];
                 m=xs[1];
-                s=rest;
                 return [d,h,m,s];
               }
 
