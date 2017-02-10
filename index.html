@@ -133,7 +133,12 @@
                   }
                   else {
                     //update(now->diff(time)->format('%a days, %h hours, %i minutes and %s seconds'));
-                    [d,h,m,s] = toDHMS(left);
+                    // [d,h,m,s] = toDHMS(left); //This does not work because of microsoft's braindead javascript implementation. *sigh*e11
+                    dhms=toDHMS(left);
+                    d=dhms[0];
+                    h=dhms[1];
+                    m=dhms[2];
+                    s=dhms[3];
                     //console.log(left);
                     update(d + " days, " + h + " hours, " + m + " minutes, " + s + " seconds");
                   }
