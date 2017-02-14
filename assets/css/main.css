@@ -4029,3 +4029,5 @@
 
 .faq p {text-align: left; font-size:0.8em}
 .testimonial p {text-align: left; font-style: italic}
+.reader-testimonial p {text-align: left; font-size:0.8em; margin-bottom:0.3em}
+.reader-testimonial .reader-attrib {padding-right:1em; font-weight:900}
