@@ -4025,6 +4025,7 @@
 
   }
 
-/* FAQ */
+/* FAQ, testimonials et al */
 
 .faq p {text-align: left; font-size:0.8em}
+.testimonial p {text-align: left; font-style: italic}
