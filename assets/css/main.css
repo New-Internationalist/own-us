@@ -3304,6 +3304,9 @@
       position: absolute;
       right: 1em;
       top: 0;
+      width:65%;
+      text-align:right;
+      min-width:490px;
     }
 
       #header nav ul {
