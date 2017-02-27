@@ -108,7 +108,7 @@
             </form>
             <!--span class="image"><img src="images/pic01.jpg" alt="" /></span-->
             <script>
-             var launch = new Date("2017-03-01") / 1000;
+             var launch = new Date("2017-03-01 08:00:00") / 1000;
 
              function toDHMS(secs) {
                 var minutes = 60;
@@ -148,7 +148,8 @@
                     m=dhms[2];
                     s=dhms[3];
                     //console.log(left);
-                    update(d + " days, " + h + " hours, " + m + " minutes, " + s + " seconds");
+                    dayStr=d == 1 ? " day, " : " days, ";
+                    update(d + dayStr  + h + " hours, " + m + " minutes, " + s + " seconds");
                   }
                 },500);
               }
