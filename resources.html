@@ -38,7 +38,7 @@
     <div id="page-wrapper">
       <!-- Header -->
         <header id="header">
-          <h1 id="logo"><a href="index.html" class="fill-div"></a></h1>
+          <h1 id="logo"><a href="resources.html" class="fill-div"></a></h1>
           <nav id="nav">
             <ul>
               <!--li>
@@ -60,118 +60,25 @@
               </li-->
               <!--li><a href="#updates">Updates</a></li-->
               <li><a href="#about">About</a></li>
-              <li><a href="#downloads">Documents</a></li>
+              <!--li><a href="#downloads">Documents</a></li-->
               <!--li><a href="#press">In the press</a></li-->
               <li><a href="#endorsements">Endorsements</a></li>
               <li><a href="#faqs">FAQs</a></li>
               <li><a href="#whatsacso">Community shares</a></li>
-              <li><a href="#signup">Sign up</a></li>
-              <li><a href="https://newint.org">newint.org &raquo;</a></li>
+              <li><a href="https://crowdfunder.co.uk/new-internationalist" class="button special">Invest &raquo;</a></li>
+              <!--li><a href="https://newint.org">newint.org &raquo;</a></li-->
               <!--li><a href="https://newint.org/misc/newsletter/help-shape-our-future/" class="button special">Invest</a></li-->
             </ul>
           </nav>
           <nav id="toTop" style="display:none;position:fixed;top:2px;right:10px">
-            <ul><li><a href="#banner">Back to top</a></li></ul>
+            <ul><li><a href="#about">Back to top</a></li></ul>
           </nav>
         </header>
 
-      <!-- Banner -->
-        <section id="banner">
-          <div class="content">
-            <header>
-              <span id="countdown"></span>
-              <h2>Buy into a better story</h2>
-              <p>
-                On 1 March 2017, New Internationalist will launch a <a href="#about">community share offer</a>.<br />
-                You&#8217;ll get a chance to invest in independent journalism with facts and heart.
-              </p>
-            </header>
-            <p>Register your interest in this unique opportunity below.</p>
-            <!--p style="text-align:center">
-              <br />
-              <a href="#one" class="button">Learn More</a> &nbsp; 
-              <a href="#five" class="button special">Sign up</a>
-            </p-->
-            <form method="post" action="//secure.whatcounts.com/bin/listctrl" class="container 60%" style="max-width:640px">
-              <div class="row uniform 50%">
-                <input type="hidden" name="slid" value="6B5869DC547D3D46650B4D6780487885">
-                <input type="hidden" name="cmd" value="subscribe">
-                <input type="hidden" name="goto" id="goto" value="https://own-us.newint.org/thankyou.html">
-                <input type="hidden" name="custom_source_web_quickjoin" value="1">
-                <input type="hidden" name="custom_is_double_optin" value="1">
-                <input type="hidden" name="custom_source_web_sub_page" value="https://own-us.newint.org/index.html ">
-                <input type="hidden" name="custom_tmp_2016_interested_in_cso" value="1">
-                <input type="hidden" name="format" value="html">
-                <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="you@yourdomain.com" onchange="$('#goto').val('http://own-us.newint.org/thankyou.html?email=' + $('#email').val());" /></div>
-                <div class="4u$ 12u$(xsmall)"><input type="submit" value="Sign up" class="fit special" /></div>
-              </div>
-            </form>
-            <!--span class="image"><img src="images/pic01.jpg" alt="" /></span-->
-            <script>
-             var launch = new Date("2017-03-01 08:00:00") / 1000;
-
-             function toDHMS(secs) {
-                var minutes = 60;
-                var hours   = 60*60;
-                var days    = 60*60*24;
-
-                // this monstrous way of writing it is forced on me by IE's crap JS implementation
-                // I'd like to write [rest,d] = modDiv...
-                xs = modDiv(secs,days);
-                d=xs[1];
-                xs = modDiv(xs[0],hours);
-                h=xs[1];
-                xs = modDiv(xs[0],minutes);
-                s=xs[0];
-                m=xs[1];
-                return [d,h,m,s];
-              }
-
-              function modDiv(n,m) {
-                return [Math.ceil(n%m),Math.floor(n/m)];
-              }
-
-             function timer(time,update,complete) {
-                var interval = setInterval(function() {
-                  var now = new Date().getTime();
-                  var left = Math.round(time - ( now / 1000));
-                  if( left <= 0) {
-                      clearInterval(interval);
-                      complete();
-                  }
-                  else {
-                    //update(now->diff(time)->format('%a days, %h hours, %i minutes and %s seconds'));
-                    // [d,h,m,s] = toDHMS(left); //This does not work because of microsoft's braindead javascript implementation. *sigh*e11
-                    dhms=toDHMS(left);
-                    d=dhms[0];
-                    h=dhms[1];
-                    m=dhms[2];
-                    s=dhms[3];
-                    //console.log(left);
-                    dayStr=d == 1 ? " day, " : " days, ";
-                    update(d + dayStr  + h + " hours, " + m + " minutes, " + s + " seconds");
-                  }
-                },500);
-              }
-              
-              timer( launch, // milliseconds
-                     function(timeleft) { // called every step to update the visible countdown
-                        document.getElementById('countdown').innerHTML = timeleft+" to go";
-                     },
-                     function() { // what to do after
-                        document.getElementById('countdown').innerHTML = "We've Launched!";
-                     }
-              );
-            </script>
-          </div>
-
-          <a href="#about" class="goto-next scrolly">More</a>
-        </section>
-
       <!-- Updates -->
         <!--section id="updates" class="wrapper style1 special fade-up">
-          <!--span class="image fit main"><img src="images/pic02.jpg" alt="" /></span-->
-          <!--div class="container">
+          <span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+          <div class="container">
             <header class="major">
               <h2>Updates</h2>
               <p>From our website and from social media</p>
@@ -182,6 +89,7 @@
                   <iframe style="width:90%;height:450px" src="https://www.youtube.com/embed/Qk6R6ZO9i4k" frameborder="0" allowfullscreen></iframe>
                 </div>
               </div>
+              <div class="spotlyte-widget" data-streamid="b6776a0e-91c3-49e4-82da-053bedd4e43e" data-campaignid="" data-campaigntype="" data-event-sources="34" data-prst-name="Default" data-layoutstyle="horizontal_carousel" data-mosaic-type="mosaic1" data-color="ffffff" data-bgcolor="cdd7d9" data-fontfamily="Roboto" data-fontcolor="000000" data-fontsize="16px" data-fontstyle="normal" data-fontweight="normal" data-auto-load-posts="true" data-auto-resize="true" data-loadmore-onscroll="false" data-auto-scroll="false" data-fitscreen="false" data-banner-text="" data-posts-padding="8" data-carousel-image-width="400" data-carousel-image-height="250" data-carousel-auto-scroll="true" data-slideshow-delay="3" data-width="100%" data-height="400px" data-prefcolumns="3" data-columnwidth="300" data-show-story-text="inherit" data-show-publisher-image="none" data-show-publisher-name="none" data-show-post-time="none" data-show-story-type="inherit" data-show-post-media="inherit" data-show-post-footer="inherit" data-show-post-overlay="true" data-show-widget-toolbar="none" data-show-source-filters="none" ></div><script async src="//static.getspotlyte.com/spotsbusiness/js/stream-widget-load.js"></script>-
               <div id="newint-updates" class="row uniform">
               </div>
             </div>
@@ -194,12 +102,12 @@
         </section-->
 
       <!-- About the CSO -->
-        <section id="about" class="spotlight style4 bottom">
-          <span class="image fit main"><img src="images/handhold-crop.jpg" alt="" /></span>
+        <section id="about" class="wrapper style1 special">
+          <h1 style="font-size:3.5em; margin-bottom:1em">Buy into a better story</h1>
           <div class="content">
             <div class="container">
               <div class="row">
-                <div class="4u 12u$(medium)">
+                <div class="4u 12u$(medium)" style="text-align:left">
                   <header>
                   <h2>Community share offer</h2>
                     <p>Stand up for something better</p>
@@ -210,7 +118,7 @@
                   By this we mean trustworthy journalism that gives the facts; stories that make sense of the complex, beautiful and bewildering world we live in. And critical analysis that offers a road map to a more equal world. 
                   </p>
                 </div>
-                <div class="4u 12u$(medium)">
+                <div class="4u 12u$(medium)" style="text-align:left">
                   <p>
                   Over the past 44 years, New Internationalist has delivered precisely that.
                   </p>
@@ -224,7 +132,7 @@
                   In March 2017, we will launch a Community Share Offer.
                   </p>
                 </div>
-                <div class="4u$ 12u$(medium)">
+                <div class="4u$ 12u$(medium)" style="text-align:left">
                   <p>
                    It will turn New Internationalist into a global media co-operative owned by thousands of ordinary people.
                   </p>
@@ -243,11 +151,11 @@
               </div>
             </div>
           </div>
-          <a href="#downloads" class="goto-next scrolly"></a>
+          <a href="#endorsements" class="goto-next scrolly"></a>
         </section>
 
       <!-- Downloads -->
-        <section id="downloads" class="spotlight style2 right">
+        <!--section id="downloads" class="spotlight style2 right">
           <span class="image fit main"><img src="images/own-us-cyan-red-bg.png" alt="" /></span>
           <div class="content">
             <header>
@@ -262,7 +170,7 @@
             </ul>
           <a href="#endorsements" class="goto-next scrolly">Next</a>
           </div>
-        </section>
+        </section-->
 
       <!-- In the press -->
         <!--section id="press" class="spotlight style2 right">
@@ -532,22 +440,13 @@
         <section id="signup" class="wrapper style2 special fade">
           <div class="container">
             <header>
-              <h2>Sign up to learn more</h2>
-              <p>Think you may be interested in becoming an owner of New Internationalist in the future?<br />
-              Be the first to register your interest.</p>
+              <h2>Invest today!</h2>
+              <p>If you are interested in becoming a co-owner of New Internationalist, go to our crowdfunder page<br />
+              Hurry though &mdash; the offer closes on 6 April.</p>
             </header>
             <form method="post" action="//secure.whatcounts.com/bin/listctrl" class="container 50%">
               <div class="row uniform 50%">
-                <input type="hidden" name="slid" value="6B5869DC547D3D46650B4D6780487885">
-                <input type="hidden" name="cmd" value="subscribe">
-                <input type="hidden" name="goto" id="goto2" value="http://own-us.newint.org/thankyou.html">
-                <input type="hidden" name="custom_source_web_quickjoin" value="1">
-                <input type="hidden" name="custom_is_double_optin" value="1">
-                <input type="hidden" name="custom_source_web_sub_page" value="/index.html ">
-                <input type="hidden" name="custom_tmp_2016_interested_in_cso" value="1">
-                <input type="hidden" name="format" value="html">
-                <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email2" placeholder="you@yourdomain.com" onchange="$('#goto2').val('http://own-us.newint.org/thankyou.html?email=' + $('#email2').val());" /></div>
-                <div class="4u$ 12u$(xsmall)"><input type="submit" value="Sign up" class="fit special" /></div>
+                <div class="12u$"><a href="https://crowdfunder.co.uk/new-internationalist" class="button special">Invest</a></div>
               </div>
             </form>
           </div>
