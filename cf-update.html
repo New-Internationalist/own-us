@@ -14,18 +14,21 @@
   <p style="position:absolute; top:50%;left:50%;font-size:4em" id="blarb"></p>
 <script>
   var src="https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D'https%3A%2F%2Fwww.crowdfunder.co.uk%2Fnew-internationalist'%20and%20xpath%3D'%2F%2Fspan%5Bcontains(%40class%2C%22progress-info-header%22)%5D'&format=json&diagnostics=false&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
+  var i = 0;
   $(function() {
-    $.ajax({ 
-      type: "GET",
-      dataType: "json",
-      url: src,
-      success: function(data){        
-        amt=data["query"].results.span[0].content;
-        $('#blarb').text(amt); 
-      }
-
-    });
+    setInterval (updateamt,5000)
   });
+  function updateamt() {
+        $.ajax({ 
+          type: "GET",
+          dataType: "json",
+          url: src,
+          success: function(data){        
+            amt=data["query"].results.span[0].content;
+            $('#blarb').text(amt + " i==" + i++); 
+          }
+        });
+  }
 </script>
 
 
